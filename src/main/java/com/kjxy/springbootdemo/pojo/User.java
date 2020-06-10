@@ -1,51 +1,73 @@
 package com.kjxy.springbootdemo.pojo;
 
-import java.util.Date;
-
 public class User {
-    private  String id;
-    private String name;
-    private int age;
-    private Date birthday;
-    private String sex;
+    private Integer id;
 
-    public String getId() {
+    private String username;
+
+    private String password;
+
+    private String email;
+
+    private String phone;
+
+    private String status;
+
+    private Integer role;
+
+    public Integer getRole() {
+        return role;
+    }
+
+    public void setRole(Integer role) {
+        this.role = role;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username == null ? null : username.trim();
     }
 
-    public int getAge() {
-        return age;
+    public String getPassword() {
+        return password;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
     }
 
-    public Date getBirthday() {
-        return birthday;
+    public String getEmail() {
+        return email;
     }
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
+    public void setEmail(String email) {
+        this.email = email == null ? null : email.trim();
     }
 
-    public String getSex() {
-        return sex;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
     }
 }
