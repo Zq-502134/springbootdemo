@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 //入口类
 @SpringBootApplication
 @MapperScan("com.kjxy.springbootdemo.mapper")
-@EntityScan("com.kjxy.springbootdemo.pojo")
 public class SpringbootdemoApplication {
 
 	public static void main(String[] args) {
